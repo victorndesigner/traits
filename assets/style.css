@@ -48,6 +48,32 @@ header h1 {
     text-align: center;
 }
 
+.trait-name {
+    color: #b8b8b8;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.trait-comum {
+    color: #ffffff;
+    font-style: italic;
+}
+
+.trait-normal {
+    color: #afff90;
+    font-style: italic;
+}
+
+.trait-raro {
+    color: #a5d4ff;
+    font-style: italic;
+}
+
+.trait-epico {
+    color: #bd94ff;
+    font-style: italic;
+}
+
 main {
     width: 100%;
     max-width: 1200px;
@@ -214,6 +240,34 @@ main {
 .filter-container button:focus {
     outline: none;
 }
+
+.button-container {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-purple {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+
+  .btn-purple:hover {
+    box-shadow: 0 0 25px rgba(138, 43, 226, 0.8);
+    transform: scale(1.05);
+  }
+
+  .btn-purple:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 10px rgba(138, 43, 226, 0.6);
+  }  
 
 @media (max-width: 768px) {
     .logo-header {
