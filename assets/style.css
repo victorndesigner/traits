@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #181818;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-header img {
+    width: 47px;
+    height: 47px;
+}
+
+.logo-header h1 {
+    font-size: 25px;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 700;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.slot {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #303030;
+    background-color: #1b1b1b;
+}
+
+.slot-header {
+    background-color: #222222;
+    padding: 12px 30px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.slot-header svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+.category {
+    margin: 20px 0;
+}
+
+.category-header {
+    padding: 12px 25px;
+    background-color: #2c2c2c;
+    border-radius: 6px 6px 0 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.traits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.trait-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.trait-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 15px rgba(114, 114, 114, 0.6);
+}
+
+.trait-card h3 {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.trait-card p {
+    font-size: 0.9rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.traits::-webkit-scrollbar {
+    width: 8px;
+}
+
+.traits::-webkit-scrollbar-track {
+    background: #272727;
+    border-radius: 8px;
+}
+
+.traits::-webkit-scrollbar-thumb {
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+.site-footer {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    font-size: 1rem;
+    color: #ccc;
+    font-weight: 600;
+}
+
+.site-footer a {
+    color: #535353;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.logo-header img {
+    width: 47px;
+    height: 47px;
+    transition: all 0.3s ease;
+}
+
+.logo-header img {
+    transition: all 0.5s ease;
+}
+
+.logo-header img:hover {
+    filter: drop-shadow(0 0 7px #8c34ff);
+    transform: scale(1.05);
+}
+
+.logo-header h1 {
+    transition: all 0.5s ease;
+}
+
+.logo-header h1:hover {
+    filter: drop-shadow(0 0 7px #5a5a5a);
+    transform: scale(1.05);
+}
+
+.filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.filter-container button {
+    background-color: #2e2e2e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.filter-container button:hover,
+.filter-container button.active {
+    background-color: #4b4b4b;
+    color: #fff;
+}
+
+.filter-container button:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .logo-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .traits {
+        grid-template-columns: 1fr;
+        max-height: none;
+    }
+
+    .slot-header {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .trait-card {
+        padding: 15px;
+    }
+}
